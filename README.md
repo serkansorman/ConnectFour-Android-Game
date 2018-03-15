@@ -1,3 +1,6 @@
+## Game Features
+<img src="https://user-images.githubusercontent.com/23194718/37463032-03306a90-2865-11e8-844f-3c39a11ecc32.jpeg" width="250"/> <img src="https://user-images.githubusercontent.com/23194718/37464001-0d982786-2868-11e8-82a8-86e2e5bf87fa.jpeg" width="250"/> <img src="https://user-images.githubusercontent.com/23194718/37465403-1508aa32-286c-11e8-89f6-63aeb794bcdb.jpeg" width="250"/>
+
 ✓ Oyun menüsünden oyun modu tek kişilik ya da iki kişilik olarak seçilebilir.
 
 ✓ Oyun menüsünden how to play seçeneğinden oyuna dair kısa bilgilendirmeye ulaşılabilir.
@@ -21,3 +24,4 @@ Bu zaman kullanıcıya girdiği süre içerisinde hamle yapma imkanı sağlar.S�
 ✓ Oyun sırasında isteğe bağlı olarak başlatılan oyuna özel olarak oyun sonu sesleri ve son beş saniye kala geri sayım sesi ekrandaki ses butonundan kapatılabilir.
 
 ✓ Ayrıca kullanıcı sağ üstteki menü butonuna tıklayarak oyundan çıkıp menüye dönebilir.
+ 
