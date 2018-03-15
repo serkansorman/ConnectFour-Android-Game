@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="200dp"
+    android:orientation="vertical" >
+
+
+    <Button
+        android:id="@+id/normalMode"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/menubtn"
+        android:text="normal version"
+        android:textColor="#080606"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/timedMode"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/normalMode"
+        android:layout_below="@+id/normalMode"
+        android:background="@drawable/menubtn"
+        android:textSize="18dp"
+        android:textColor="#080606"
+        android:text="tımed version" />
+
+</RelativeLayout>

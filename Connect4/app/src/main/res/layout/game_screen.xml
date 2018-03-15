@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/undoButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="47dp"
+        app:layout_constraintEnd_toStartOf="@+id/menuButton"
+        app:layout_constraintStart_toEndOf="@+id/soundButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/soundButton"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="47dp"
+        app:layout_constraintEnd_toStartOf="@+id/undoButton"
+        app:layout_constraintStart_toEndOf="@+id/p1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="46dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginTop="47dp"
+        app:layout_constraintEnd_toStartOf="@+id/p2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/p1"
+        android:layout_width="69dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/p1" />
+
+    <ImageView
+        android:id="@+id/p2"
+        android:layout_width="69dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/p2" />
+
+    <TextView
+        android:id="@+id/timePanel"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintEnd_toStartOf="@+id/p2"
+        app:layout_constraintStart_toEndOf="@+id/p1"
+        app:layout_constraintTop_toBottomOf="@+id/undoButton" />
+
+    <ImageView
+        android:id="@+id/p1Score"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="67dp"
+        app:layout_constraintEnd_toStartOf="@+id/timePanel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1"
+        app:srcCompat="@drawable/zero" />
+
+    <ImageView
+        android:id="@+id/p2Score"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/timePanel"
+        app:layout_constraintTop_toBottomOf="@+id/p2"
+        app:srcCompat="@drawable/zero" />
+
+    <HorizontalScrollView
+        android:id="@+id/horScroll"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p2Score">
+
+        <ScrollView
+            android:id="@+id/verScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:id="@+id/board"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </GridLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>

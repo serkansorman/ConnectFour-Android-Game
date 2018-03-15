@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood2" >
+    tools:context="com.example.serkansorman.connect4.MenuActivity">
+
+    <Button
+        android:id="@+id/PvCButton"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/menubtn"
+        android:text="Single Player"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="#080606"
+        android:onClick="pvcMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PvPButton" />
+
+
+    <Button
+        android:id="@+id/PvPButton"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/menubtn"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#080606"
+        android:text="Two players"
+        android:onClick="pvpMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+    <Button
+        android:id="@+id/About"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/menubtn"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#080606"
+        android:text="How to play"
+        android:onClick="howToPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PvCButton" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/menubtn"
+        android:text="Exıt"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#080606"
+        android:onClick="Quit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/About" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="315dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

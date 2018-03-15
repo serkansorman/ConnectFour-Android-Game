@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/seekBar2"
+        android:layout_below="@+id/textView"
+        android:max="35"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_seekbar_progress"
+        android:thumb="@drawable/custom_seekbar_thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:max="890"
+        android:progress="0"
+        android:progressDrawable="@drawable/custom_seekbar_progress"
+        android:thumb="@drawable/custom_seekbar_thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignStart="@+id/seekBar2"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/seekBar2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="27dp" />
+
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Board Size"
+        android:textColor="#b10000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/time"
+        android:layout_below="@+id/size"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Time"
+        android:textColor="#b10000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+
+
+        android:id="@+id/size"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="5 x 5"
+        android:textColor="#2eff12"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/seekBar2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="00:10"
+        android:textColor="#2eff12"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button" />
+
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/seekBar2"
+        android:layout_alignStart="@+id/button" />
+
+</RelativeLayout>
